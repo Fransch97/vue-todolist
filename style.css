@@ -53,3 +53,7 @@ li{
     justify-content: space-between;
     border-bottom: solid 2px black;
 }
+
+span.done{
+    text-decoration: line-through;
+}

@@ -25,6 +25,11 @@ const app = new Vue({
 
         deleteMe(index){
             this.todoLists.splice(index, 1)
+        },
+
+        doneCheck(el,index){
+            // console.log(this.todoLists[index].done)
+            (!this.todoLists[index].done)?this.todoLists[index].done = true: this.todoLists[index].done = false;
         }
     },
 
