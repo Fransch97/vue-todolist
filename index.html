@@ -19,14 +19,14 @@
     <div id="app" class="container">
         <h1>Todo List</h1>
         <div class="addTodoContainer">
-            <input type="text" v-model="toAddTodo.todo" @keyup.enter="pushTodo" name="" id="">
+            <input type="text" v-model.trim = "toAddTodo.todo" @keyup.enter="pushTodo" name="" id="">
             <button @click="pushTodo">Aggiungi</button>
         </div>
 
         <div class="todo-list">
             <ul v-if="todoLists.length > 0">
                 <li v-for="(el,index) in todoLists">
-                    <span @click="doneCheck(el, index)" :class="{'done' : todoLists[index].done}">{{el.todo}}</span>
+                    <span @click="doneCheck(el, index)" :class="{'done' : todoLists[index].done}">{{el.todo.charAt(0).toUpperCase() + el.todo.slice(1)}}</span>
                     <i class="fa-solid fa-x" @click="deleteMe(index)"></i>
                 </li>
                
