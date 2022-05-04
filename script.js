@@ -14,7 +14,15 @@ const app = new Vue({
     },
 
     methods:{
-
+        pushTodo(){
+            const news = {
+                todo : "" + this.toAddTodo.todo,
+                done : this.toAddTodo.done
+            }
+            this.todoLists.push(news)
+            
+                
+        }
     },
 
     mounted() {
