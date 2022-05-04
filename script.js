@@ -28,8 +28,7 @@ const app = new Vue({
         },
 
         doneCheck(el,index){
-            // console.log(this.todoLists[index].done)
-            (!this.todoLists[index].done)?this.todoLists[index].done = true: this.todoLists[index].done = false;
+            this.todoLists[index].done = !this.todoLists[index].done
         }
     },
 
