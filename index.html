@@ -20,14 +20,14 @@
         <h1>Todo List</h1>
         <div class="addTodoContainer">
             <input type="text" v-model="toAddTodo.todo" @keyup.enter="pushTodo" name="" id="">
-            <button>Aggiungi</button>
+            <button @click="pushTodo">Aggiungi</button>
         </div>
 
         <div class="todo-list">
             <ul>
                 <li v-for="(el,index) in todoLists">
                     <span>{{el.todo}}</span>
-                    <i class="fa-solid fa-x"></i>
+                    <i class="fa-solid fa-x" @click="deleteMe(index)"></i>
                 </li>
                
             </ul>

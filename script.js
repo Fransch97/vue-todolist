@@ -16,12 +16,15 @@ const app = new Vue({
     methods:{
         pushTodo(){
             const news = {
-                todo : "" + this.toAddTodo.todo,
+                todo : this.toAddTodo.todo,
                 done : this.toAddTodo.done
             }
             this.todoLists.push(news)
-            
-                
+            this.toAddTodo.todo = ""
+        },
+
+        deleteMe(index){
+            this.todoLists.splice(index, 1)
         }
     },
 
