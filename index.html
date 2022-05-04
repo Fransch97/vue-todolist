@@ -19,24 +19,17 @@
     <div id="app" class="container">
         <h1>Todo List</h1>
         <div class="addTodoContainer">
-            <input type="text" v-model="chiave" name="" id="">
+            <input type="text" v-model="toAddTodo" name="" id="">
             <button>Aggiungi</button>
         </div>
 
         <div class="todo-list">
             <ul>
-                <li>
-                    <span>blabla</span>
+                <li v-for="(el,index) in todoLists">
+                    <span>{{el.todo}}</span>
                     <i class="fa-solid fa-x"></i>
                 </li>
-                <li>
-                    <span>blabla</span>
-                    <i class="fa-solid fa-x"></i>
-                </li>
-                <li>
-                    <span>blabla</span>
-                    <i class="fa-solid fa-x"></i>
-                </li>
+               
             </ul>
         </div>
 
