@@ -32,16 +32,18 @@ button{
 }
 
 .todo-list{
+    background-color: aliceblue;
     text-align: center;
+    padding: 50px;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
 }
 
 ul{
-    background-color: aliceblue;
-    width: 80%;
     margin: 0 auto;
     min-width: 300px;
     max-width: 1000px;
-    margin-top: 30px;
     padding: 30px;
 }
 

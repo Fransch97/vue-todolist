@@ -24,13 +24,14 @@
         </div>
 
         <div class="todo-list">
-            <ul>
+            <ul v-if="todoLists.length > 0">
                 <li v-for="(el,index) in todoLists">
                     <span>{{el.todo}}</span>
                     <i class="fa-solid fa-x" @click="deleteMe(index)"></i>
                 </li>
                
             </ul>
+            <h2 v-else="">Non ci sono compiti</h2>
         </div>
 
     </div>
