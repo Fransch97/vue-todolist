@@ -1,9 +1,53 @@
+/* GENERALS */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+li{
+    list-style: none;
+}
 
-body{
-    background-color: red;
+/*END GENERALS */
+
+
+h1{
+    text-align: center;
+    padding: 50px;
+    font-size: 50px;
+}
+
+.addTodoContainer{
+    text-align: center;
+}
+
+input{
+    padding: 15px;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+button{
+    padding: 15px;
+}
+
+.todo-list{
+    text-align: center;
+}
+
+ul{
+    background-color: aliceblue;
+    width: 80%;
+    margin: 0 auto;
+    min-width: 300px;
+    max-width: 1000px;
+    margin-top: 30px;
+    padding: 30px;
+}
+
+li{
+    padding: 30px 10px  30px  30px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 2px black;
 }
