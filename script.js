@@ -28,10 +28,11 @@ const app = new Vue({
         },
 
         deleteMe(index){
+            if(confirm(`Vuoi daver cancellare "${this.todoLists[index].todo}" ?`))
             this.todoLists.splice(index, 1)
         },
 
-        doneCheck(el,index){
+        doneCheck(index){
             this.todoLists[index].done = !this.todoLists[index].done
         }
     },
